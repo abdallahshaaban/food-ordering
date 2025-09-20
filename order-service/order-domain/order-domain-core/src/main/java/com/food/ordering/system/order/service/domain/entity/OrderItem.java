@@ -32,6 +32,9 @@ public class OrderItem extends BaseEntity<OrderItemId> {
         price = builder.price;
         subTotal = builder.subTotal;
     }
+    public static Builder builder() {
+        return new OrderItem.Builder();
+    }
 
 
     public OrderId getOrderId() {
