@@ -17,7 +17,6 @@ import java.util.List;
 
 @Slf4j
 public class OrderDomainServiceImpl implements OrderDomainService {
-    private static final Logger log = LoggerFactory.getLogger(OrderDomainServiceImpl.class);
 
     @Override
     public OrderCreatedEvent validateAndInitiateOrder(Order order, Restaurant restaurant) {
